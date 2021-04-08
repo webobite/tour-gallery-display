@@ -13,20 +13,9 @@
   }
 }
 
-.App-header {
-  background-color: blue;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-body {
   background-color: #282c34;
-  min-height: 83vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +26,7 @@
 
 .App-footer {
   background-color: blue;
-  min-height: 7vh;
+  min-height: 7.2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
