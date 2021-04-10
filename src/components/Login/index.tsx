@@ -1,21 +1,25 @@
 import React from 'react'
+import BusMoving from '../animations/BusMoving'
 
 function Login() {
     return (
         <div>
-            <section className="flex flex-col md:flex-row h-screen items-center">
-                <div className="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
+            <div className="flex flex-col md:flex-row h-screen items-center">
+                <div className="hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
                     {/* ADD BUS ANIMATION TO THIS PART OF THE SIDE */}
-                    <img src="https://source.unsplash.com/random" alt="" className="w-full h-full object-cover" />
+                    {/* <img src="https://source.unsplash.com/random" alt="" className="w-full h-full object-cover" /> */}
+                    <BusMoving />
                 </div>
                 <div className="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:mx-0 md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12
         flex items-center justify-center">
 
                     <div className="w-full h-100">
-                        <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">My Travel Dairy</h1>
+                    <h1 className="text-xl md:text-2xl leading-tight mt-12">
+                        Welcome here !!
+                    </h1>
                         <form className="mt-6" action="#" method="POST">
                             <div>
-                                <label className="block text-gray-700">Email Address</label>
+                                <label className="block text-black-700">Email Address</label>
                                 <input type="email" name="" id="" placeholder="Enter Email Address" className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autoFocus required />
                             </div>
 
@@ -51,7 +55,7 @@ function Login() {
 
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     )
 }
