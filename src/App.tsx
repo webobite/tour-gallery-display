@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Body from './components/Body';
-import Footer from './components/Footer';
 import Login from './components/Login';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Register from './components/Register';
+import Dashboard from './components/Dashboard';
+
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <Header />
-      </header>
-      <div className="App-body">
-        <Body />
+    <Router>
+      <div className="App">
+        <Switch>
+        <Route path="/" exact component={Login} />
+        <Route path="/register" exact component={Register} />
+          <Route path="/dashboard/:username" exact component={Dashboard} />
+        </Switch>
       </div>
-      <footer className="App-footer">
-        <Footer />
-      </footer> */}
-      <Login />
-    </div>
+    </Router>
   );
 }
 
