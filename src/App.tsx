@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Login from './components/Login';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -10,6 +11,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+            {/* ROUTES DEFINEDED HERE */}
         <Route path="/" exact component={Login} />
         <Route path="/register" exact component={Register} />
           <Route path="/dashboard/:username" exact component={Dashboard} />

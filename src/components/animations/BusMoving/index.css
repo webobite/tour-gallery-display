@@ -9,7 +9,7 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 }
-::-webkit-scrollbar{width: 8px;}::-webkit-scrollbar-track{background: #D24000;}::-webkit-scrollbar-thumb{background: #D24000;}::-webkit-scrollbar-thumb:hover{background: #fff;}
+::-webkit-scrollbar{width: 8px;}::-webkit-scrollbar-track{background: #1f2937;}::-webkit-scrollbar-thumb{background: #1f2937;}::-webkit-scrollbar-thumb:hover{background: #fff;}
 /* CLEARFIX */
 
 .block:after,
@@ -43,7 +43,7 @@ img {
 		max-width: 100%;
 		height: auto;
 		vertical-align: bottom;
-  background-color:#D24000;
+  background-color:#1f2937;
 }
 
 a {
@@ -51,7 +51,7 @@ a {
 }
 
 #hero {
-		background: #D24000;
+		background: #1f2937;
 		color: #fff;
 		position: relative;
 		min-height: 670px
@@ -84,7 +84,7 @@ a {
 }
 
 #navigation {
-		background: #D24000;
+		background: #1f2937;
 }
 
 .logo {
@@ -127,7 +127,7 @@ nav[role=navigation] li a {
 #fullGrid {
 		width: 100%;
 		overflow: hidden;
-  background-color:#D24000;
+  background-color:#1f2937;
   color:#fff;
 }
 
@@ -141,7 +141,7 @@ nav[role=navigation] li a {
 		text-align: center;
 		color: fff;
 		padding-top: 1em;
-  background-color:#D24000;
+  background-color:#1f2937;
 }
 
 #footer a {
