@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import BusMoving from '../animations/BusMoving'
 
 function Login() {
@@ -51,8 +52,8 @@ function Login() {
                             </div>
                         </button>
 
-                        <p className="mt-8">Need an account? <a href="#" className="text-blue-500 hover:text-blue-700 font-semibold">Create an
-              account</a></p>
+                        <p className="mt-8">Need an account?<Link to="/Register" className="text-blue-500 hover:text-blue-700 font-semibold"> Create an
+            account</Link> </p>
 
 
                     </div>
