@@ -1,11 +1,13 @@
 import React from 'react'
+import { IHeaderBar } from './IHeaderBar'
 
-const HeaderBar = (props : any) => {
+const HeaderBar = (props : IHeaderBar) => {
+    const {username} = props;
     return (
         <div>
             <nav className="border-b bg-white px-6 py-2 flex items-center min-w-0 h-14">
                 <h1 className="font-semibold text-lg">
-                    Welcome {props.username} !!
+                    Welcome {username} !!
                 </h1>
                 <span className="flex-1"></span>
                 {/* <span className="mr-2">
