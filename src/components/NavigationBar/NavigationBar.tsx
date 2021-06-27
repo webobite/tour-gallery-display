@@ -9,10 +9,12 @@ function NavigationBar(props: INavigationBar) {
     } = props;
 
     const HOME_PATH = `/dashboard/${username}`;
-    const TRAVEL_PLAN_PATH = `/dashboard/travelplan/${username}`;
-    const GALLERY_PATH =  `/dashboard/gallery/${username}`;
-    const SOCIAL_CONNECT_PATH =  `/dashboard/socialconnect/${username}`;
-    const PROFILE_SETTING =  `/dashboard/profile/${username}`;
+    const TRAVEL_PLAN_PATH = `/dashboard/travelplan/`;
+    const GALLERY_PATH =  `/dashboard/gallery/`;
+    const SOCIAL_CONNECT_PATH =  `/dashboard/socialconnect/`;
+    const PROFILE_SETTING =  `/dashboard/profile/`;
+
+    const TEST_ROUTE = '/bubblegum';
 
     return (
         <aside className="sm:h-full sm:w-16 w-full h-12 bg-gray-800 text-gray-200">
@@ -54,4 +56,4 @@ function NavigationBar(props: INavigationBar) {
     )
 }
 
-export default NavigationBar
+export default React.memo(NavigationBar)

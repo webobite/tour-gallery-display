@@ -9,8 +9,41 @@ import SocialConnectComponent from '../SocialConnectComponent/SocialConnectCompo
 import ProfileComponent from '../ProfileComponent/ProfileComponent'
 import GalleryComponent from '../GalleryComponent/GalleryComponent'
 
+const routes = [
+    {
+        path: '/dashboard/',
+        exact: true,
+        sidebar: () => <div>home!</div>,
+        main: HomeDashboard
+    },
+    {
+        path: '/dashboard/travelplan',
+        exact: true,
+        sidebar: () => <div>home!</div>,
+        main: TravelPlanComponent
+    },
+    {
+        path: '/dashboard/gallery',
+        sidebar: () => <div>bubblegum!</div>,
+        main: GalleryComponent
+    },
+    {
+        path: '/dashboard/socialconnect',
+        sidebar: () => <div>bubblegum!</div>,
+        main: SocialConnectComponent
+    },
+    {
+        path: '/dashboard/profile',
+        sidebar: () => <div>bubblegum!</div>,
+        main: ProfileComponent
+    },
+]
+
 // Pass username in Dashboard through props
-function Dashboard({ match: { params: { username } } }: any) {
+function Dashboard(
+    // { match: { params: { username } } }: any
+    ) {
+        const username = 'subham'
     return (
         <div>
             <section className="h-screen w-screen bg-gray-200 flex flex-col-reverse sm:flex-row min-h-0 min-w-0 overflow-hidden">
@@ -18,12 +51,21 @@ function Dashboard({ match: { params: { username } } }: any) {
                 <main className="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 overflow-auto">
                     <HeaderBar username={username} />
                     <div>
-                        {/* ROUTES DEFINEDED HERE  --> NOT WORKING HERE*/}
-                        <Route path="/dashboard/home/:username" exact component={HomeDashboard} />
+                        {routes.map((route) => (
+                            <Route
+                                key={route.path}
+                                path={route.path}
+                                exact={route.exact}
+                                component={route.main}
+                            >
+                                {/* <route.main /> */}
+                            </Route>
+                        ))}
+                        {/* <Route path="/dashboard/home/:username" exact component={HomeDashboard} />
                         <Route path="/dashboard/travelplan/:username" exact component={TravelPlanComponent} />
                         <Route path="/dashboard/gallery/:username" exact component={GalleryComponent} />
                         <Route path="/dashboard/socialconnect/:username" exact component={SocialConnectComponent} />
-                        <Route path="/dashboard/profile/:username" exact component={ProfileComponent} />
+                        <Route path="/dashboard/profile/:username" exact component={ProfileComponent} /> */}
                     </div>
                 </main>
             </section>
