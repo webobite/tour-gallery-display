@@ -56,4 +56,4 @@ function NavigationBar(props: INavigationBar) {
     )
 }
 
-export default React.memo(NavigationBar)
+export default NavigationBar

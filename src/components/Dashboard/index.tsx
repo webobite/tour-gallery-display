@@ -9,7 +9,47 @@ import SocialConnectComponent from '../SocialConnectComponent/SocialConnectCompo
 import ProfileComponent from '../ProfileComponent/ProfileComponent'
 import GalleryComponent from '../GalleryComponent/GalleryComponent'
 
-const routes = [
+/**
+ * TODO: 
+ * - Explore React Router : https://reactrouter.com/web/example/route-config
+ * - Implement ReactWithSubroute with Dashboard TASK assigned : @webobite
+ */
+
+// const routes = [
+//     {
+//         path: '/dashboard/',
+//         exact: true,
+//         sidebar: () => <div>home!</div>,
+//         main: HomeDashboard
+//     },
+//     {
+//         path: '/dashboard/travelplan',
+//         exact: true,
+//         sidebar: () => <div>home!</div>,
+//         main: TravelPlanComponent
+//     },
+//     {
+//         path: '/dashboard/gallery',
+//         sidebar: () => <div>bubblegum!</div>,
+//         main: GalleryComponent
+//     },
+//     {
+//         path: '/dashboard/socialconnect',
+//         sidebar: () => <div>bubblegum!</div>,
+//         main: SocialConnectComponent
+//     },
+//     {
+//         path: '/dashboard/profile',
+//         sidebar: () => <div>bubblegum!</div>,
+//         main: ProfileComponent
+//     },
+// ]
+
+// Pass username in Dashboard through props
+function Dashboard(
+    { match: { params: { username } } }: any
+    ) {
+        const routes = [
     {
         path: '/dashboard/',
         exact: true,
@@ -38,12 +78,6 @@ const routes = [
         main: ProfileComponent
     },
 ]
-
-// Pass username in Dashboard through props
-function Dashboard(
-    // { match: { params: { username } } }: any
-    ) {
-        const username = 'subham'
     return (
         <div>
             <section className="h-screen w-screen bg-gray-200 flex flex-col-reverse sm:flex-row min-h-0 min-w-0 overflow-hidden">
