@@ -47,11 +47,11 @@ import GalleryComponent from '../GalleryComponent/GalleryComponent'
 
 // Pass username in Dashboard through props
 function Dashboard(
-    { match: { params: { username } } }: any
+    { match: { params: { page } } }: any
     ) {
         const routes = [
     {
-        path: '/dashboard/',
+        path: '/dashboard/home',
         exact: true,
         sidebar: () => <div>home!</div>,
         main: HomeDashboard
@@ -81,9 +81,9 @@ function Dashboard(
     return (
         <div>
             <section className="h-screen w-screen bg-gray-200 flex flex-col-reverse sm:flex-row min-h-0 min-w-0 overflow-hidden">
-                <NavigationBar username={username} />
+                <NavigationBar page={page} />
                 <main className="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 overflow-auto">
-                    <HeaderBar username={username} />
+                    <HeaderBar page={page} />
                     <div>
                         {routes.map((route) => (
                             <Route

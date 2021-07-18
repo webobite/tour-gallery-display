@@ -5,10 +5,10 @@ import { INavigationBar } from './INavigationBar'
 // Pass username in through props
 function NavigationBar(props: INavigationBar) {
     const {
-        username
+        page
     } = props;
 
-    const HOME_PATH = `/dashboard/${username}`;
+    const HOME_PATH = `/dashboard/home`;
     const TRAVEL_PLAN_PATH = `/dashboard/travelplan/`;
     const GALLERY_PATH =  `/dashboard/gallery/`;
     const SOCIAL_CONNECT_PATH =  `/dashboard/socialconnect/`;

@@ -1,3 +1,3 @@
 export interface INavigationBar {
-    username: string,
+    page: string,
 }

@@ -45,7 +45,7 @@ const RouteComponent = () => {
         <div>
             <Route path="/" exact component={Login} />
             <Route path="/register" exact component={Register} />
-            <Route path="/dashboard/:username" exact component={Dashboard} />
+            <Route path="/dashboard/:page" exact component={Dashboard} />
         </div>
     )
 }

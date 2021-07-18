@@ -1,3 +1,3 @@
 export interface IHeaderBar {
-    username: string,
+    page: string,
 }
