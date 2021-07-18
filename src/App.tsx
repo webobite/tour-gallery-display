@@ -9,14 +9,14 @@ import SocialConnectComponent from './components/SocialConnectComponent/SocialCo
 import TravelPlanComponent from './components/TravalPlanComponent/TravelPlanComponent';
 import HomeDashboard from './components/HomeDashboard/HomeDashboard';
 import GalleryComponent from './components/GalleryComponent/GalleryComponent';
+import RouteComponent from './components/RouteComponent/RouteComponent';
 
 
 function App() {
     return (
         <Router>
             <div className="App">
-                <Switch>
-                    {/* ROUTES DEFINEDED HERE */}
+                {/* <Switch>
                     <Route path="/" exact component={Login} />
                     <Route path="/register" exact component={Register} />
                     <Route path="/dashboard/:username" exact component={Dashboard} />
@@ -25,7 +25,10 @@ function App() {
                     <Route path="/dashboard/gallery/:username" exact component={GalleryComponent} />
                     <Route path="/dashboard/socialconnect/:username" exact component={SocialConnectComponent} />
                     <Route path="/dashboard/profile/:username" exact component={ProfileComponent} />
-                </Switch>
+                </Switch> */}
+                {/* <Route path="/dashboard/:username" exact component={Dashboard} /> */}
+                {/* <Dashboard /> */}
+                <RouteComponent />
             </div>
         </Router>
     );
