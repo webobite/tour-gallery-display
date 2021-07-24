@@ -1,0 +1,23 @@
+
+.profile {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin-top:20px ;
+}
+
+.profile > label {
+    display:flex;
+    justify-items: start;
+}
+
+.tel {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    box-shadow:auto;
+    border-radius: 4px;
+    padding: 8px 4px
+}
